@@ -4,11 +4,12 @@
 
 /**
  *
- *  * main - prints the phrase "Programming is like building a multilingual puzzle
+ *  main - prints the string 
  *
- *   * Return: 0 if exited properly, non-zero otherwise
- *
- *    */
+ *  Description: using the main function
+ *  This program prints "Programming is like building a multilingual puzzle"
+ *  Return: 0
+ */
 
 int main(void)
 
