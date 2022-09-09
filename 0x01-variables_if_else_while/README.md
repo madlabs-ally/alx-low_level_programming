@@ -6,4 +6,6 @@ File 2-print_alphabet.c has a C program that prints the alphabet in lowercase, f
 
 File 3-print_alphabt.c has a C program that prints the alphabet in lowercase, except q and e, followed by a new line
 
+File 4-print_alphabets.c has a C program that prints the alphabet in lowercase, and then in uppercase, followed by a new line
+
 
