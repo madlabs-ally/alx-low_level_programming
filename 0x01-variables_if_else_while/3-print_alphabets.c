@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase, and then in uppercase, 
+ * main -Entry point
+ * Description: Use `putchar` to print lowercase and then uppercase alphabet
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int ch;
