@@ -1,12 +1,12 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * print_array - print `n` elements of an array of integers
- * @a: int type array pointer
- * @n: int type integer
- * Description: Numbers must be separated by comma and space.
- */
+* print_array - prints n element of array
+* @a: array
+* @n: number of elements
+* Return: nothing
+*/
 
 void print_array(int *a, int n)
 {
@@ -15,10 +15,9 @@ void print_array(int *a, int n)
 	for (inc = 0; inc < n ; inc++)
 	{
 		if (inc != n - 1)
-		{
-                     printf("%d, ", a[inc]);
+			printf("%d, ", a[inc]);
 		else
-		     printf("%d", a[inc]);
-		}
+			printf("%d", a[inc]);
+	}
 	putchar(10);
 }
