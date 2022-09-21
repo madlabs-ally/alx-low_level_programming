@@ -7,16 +7,15 @@
  * Return: @dest
 */
 
-char *_strncat(char *dest, char *src, int m)
+char *_strncat(char *dest, char *src, int n)
 {
+	int srt = 0, dest_v = 0;
 
-	int d = 0, i = 0;
+	while (dest[srt++])
+		dest_v++;
 
-	while (dest[d])
-		i++;
-
-        for (d = 0; src[0] && d < m; d++)
-             dest[i++] = src[d];
+	for (srt = 0; src[srt] && srt < n; srt++)
+		dest[dest_v++] = src[srt];
 
 	return (dest);
 
