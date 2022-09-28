@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * palindrome - returns the 1 if s is a palindrome
+ * is_palindrome - returns the 1 if s is a palindrome
  * @s: string to be checked
  *
  * Return: 1 if s is a palindrome, 0 otherwise
  */
 
-int check_palindrome(char *s)
+int is_palindrome(char *s)
 {
 	int flag = 1;
 
@@ -30,7 +30,7 @@ void check(char *s, int start, int end, int *flag)
 	if (start <= end)
 	{
 		if (s[start] == s[end])
-	         	*flag *= 1;
+			*flag *= 1;
 		else
 			*flag *= 0;
 		check(s, start + 1, end - 1, flag);
