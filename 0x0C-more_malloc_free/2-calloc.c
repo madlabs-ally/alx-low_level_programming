@@ -13,22 +13,23 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *memb;
-	char *fill;
-	unsigned int i;
+	void *mem;
+	char *filler;
+	unsigned int index;
+
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	memb = malloc(size * nmemb);
+	mem = malloc(size * nmemb);
 
-	if (memb == NULL)
+	if (mem == NULL)
 		return (NULL);
 
-	fill = memb;
+	filler = mem;
 
-	for (i = 0; i < (size * nmemb); i++)
-		fill[i] = '\0';
+	for (index = 0; index < (size * nmemb); index++)
+		filler[index] = '\0';
 
-	return (memb)
+	return (mem);
 }
