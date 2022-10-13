@@ -7,27 +7,19 @@
  * @n: number of args passed
  */
 
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	va_list list;
-	char *hold;
+	va_list printArgs;
 
-	va_start(list, n);
+	va_start(printArgs, n);
 
 	for (i = 0; i < n; i++)
 	{
-		hold = va_arg(list, char*);
-
-		if (hold == NULL)
-			printf("(nil)");
-		else
-			printf("%s", hold);
-
-		if (i != (n - 1) && separator != NULL)
+		if (i > 0 && separator != NULL)
 			printf("%s", separator);
+		printf("%d", va_arg(printArgs, int));
 	}
+	va_end(printArgs);
 	printf("\n");
-
-	va_end(list);
 }
