@@ -2,7 +2,6 @@
 
 /**
  * listint_len  -  Return The number of elements
-
  * of a listint_t list.
  * @h: head of the list
  *
