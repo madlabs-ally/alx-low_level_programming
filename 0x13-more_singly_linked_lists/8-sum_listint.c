@@ -13,7 +13,7 @@ int sum_listint(listint_t *head)
 	listint_t *cnode;
 
 	if (head == NULL)
-		return (sum);
+		return (s);
 
 	cnode = head;
 
