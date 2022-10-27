@@ -7,13 +7,13 @@
  * Return: 1  or -1
  */
 
-int clear_bit(unsigned long int *n, unsigned int in)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int mask;
 
-	if (in > 64)
+	if (index > 64)
 		return (-1);
-	mask = 1 << in;
-	*n &= ~mas;
+	mask = 1 << index;
+	*n &= ~mask;
 	return (1);
 }
