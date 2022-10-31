@@ -11,7 +11,6 @@
  * @ptr: magic.
  * Return: no return.
  */
-
 void print_addr(char *ptr)
 {
 	int i;
@@ -25,18 +24,17 @@ void print_addr(char *ptr)
 	{
 		begin = 26;
          	printf("80");
-
 		for (i = begin; i >= 22; i--)
 		{
 			if (ptr[i] > 0)
 				printf("%x", ptr[i]);
-
 			else if (ptr[i] < 0)
 				printf("%x", 256 + ptr[i]);
 		}
 		if (ptr[7] == 6)
 	        	printf("00");
 	}
+
 	if (sys == '2')
 	{
 		begin = 26;
@@ -47,6 +45,7 @@ void print_addr(char *ptr)
 
 			else if (ptr[i] < 0)
 				printf("%02x", 256 + ptr[i]);
+
 		}
 	}
 	printf("\n");
@@ -57,7 +56,6 @@ void print_addr(char *ptr)
  * @ptr: magic.
  * Return: no return.
  */
-
 void print_type(char *ptr)
 {
 	char type = ptr[16];
@@ -189,13 +187,11 @@ void check_sys(char *ptr)
 	print_type(ptr);
 	print_addr(ptr);
 }
-
 /**
  * check_elf - check if it is an elf file.
  * @ptr: magic.
  * Return: 1 if it is an elf file. 0 if not
  */
-
 int check_elf(char *ptr)
 {
 	int addr = (int)ptr[0];
@@ -208,7 +204,6 @@ int check_elf(char *ptr)
 
 	return (0);
 }
-
 /**
  * main - check the code for Holberton School students.
  * @argc: number of arguments.
